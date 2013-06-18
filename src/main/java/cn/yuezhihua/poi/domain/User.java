@@ -2,22 +2,24 @@ package cn.yuezhihua.poi.domain;
 
 import java.io.Serializable;
 
+import cn.yuezhihua.poi.annotation.ExcelUtil;
+
 /**
  * 
  * @author yuezhihua
  *
  */
+@ExcelUtil(title="用户信息列表")
 public class User implements Serializable{
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-
+	
+	@ExcelUtil(cname="编号")
 	public Integer id;
 	
+	@ExcelUtil(cname="用户名")
 	private String uname;
 	
+	@ExcelUtil(cname="密码")
 	private String upass;
 	
 	

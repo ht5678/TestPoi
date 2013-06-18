@@ -14,6 +14,24 @@ public class TestExcel {
 	
 	private UserServiceImpl service = new UserServiceImpl();
 	
+
+	/**
+	 * poi---excel的自定义注解
+	 */	
+	@Test
+	public void testWrite02(){
+		service.testWrite02();
+	}
+
+	/**
+	 * poi---excel的写入测试
+	 */
+	@Test
+	public void testWrite01(){
+		service.testWrite01();
+	}
+	
+	
 	/**
 	 * 使用poi读取excel中的数据
 	 */
