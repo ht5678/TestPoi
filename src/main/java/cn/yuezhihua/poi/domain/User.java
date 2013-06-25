@@ -1,7 +1,5 @@
 package cn.yuezhihua.poi.domain;
 
-import java.io.Serializable;
-
 import cn.yuezhihua.poi.annotation.ExcelUtil;
 
 /**
@@ -10,7 +8,7 @@ import cn.yuezhihua.poi.annotation.ExcelUtil;
  *
  */
 @ExcelUtil(title="用户信息列表")
-public class User implements Serializable{
+public class User {
 
 	
 	@ExcelUtil(cname="编号")

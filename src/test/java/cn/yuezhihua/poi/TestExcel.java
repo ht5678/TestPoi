@@ -14,6 +14,24 @@ public class TestExcel {
 	
 	private UserServiceImpl service = new UserServiceImpl();
 	
+	/**
+	 * 测试ExcelResource注解
+	 */
+	@Test
+	public void testExcelResource(){
+		service.testExcelResource();
+		
+	}
+	
+	
+	/**
+	 * poi---excel的自定义注解
+	 */	
+	@Test
+	public void testWrite03(){
+		service.testWrite03();
+	}
+	
 
 	/**
 	 * poi---excel的自定义注解
